@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(30, 54%, 90%);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-recipe{
+    background-color: hsl(0, 0%, 100%);
+    width: 45%;
+    height: auto;
+    border-radius: 30px;
+    padding: 42px;
+    margin: 80px 20px;
+}
+
+/*----------------------------Receipe Section----------------------*/
+
+.card-recipe img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.recipe-section h1{
+    color: hsl(24, 5%, 18%);
+    margin-top: 25px;
+}
+
+.recipe-section p{
+    margin-top: 25px;
+    color: hsl(30, 10%, 34%);
+}
+
+/*----------------------------Preparation Section----------------------*/
+
+.preparation-section{
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.preparation-section p{
+    color: hsl(332, 51%, 32%);
+    font-size: 18px;
+    font-weight: 600;
+}
+.list-items-one{
+    list-style: none;
+    line-height: 30px;
+    padding: 10px;
+    color: hsl(30, 10%, 34%);
+}
+
+.list-items-one li::before{
+    content: ".";
+    font-size: 35px;
+    color: hsl(332, 51%, 32%);
+    margin-right: 30px;
+}
+
+/*----------------------------Ingredients Section----------------------*/
+
+.ingredients-section{
+    margin-top: 50px;
+}
+
+.ingredients-section h2{
+    color: hsl(14, 45%, 36%);
+}
+
+.list-items-two{
+    list-style: none;
+    line-height: 30px;
+    padding: 10px;
+    color: hsl(30, 10%, 34%);
+}
+
+.list-items-two li::before{
+    content: ".";
+    font-size: 35px;
+    color: hsl(14, 45%, 36%);
+    margin-right: 30px;
+}
+
+hr{
+    height: 1px;
+    border: none;
+    background-color: hsl(30, 18%, 87%);
+    margin: 40px 0;
+}
+
+/*----------------------------Instructions Section----------------------*/
+
+.instructions-section{
+    margin-top: 10px;
+}
+
+.instructions-section h2{
+    color: hsl(14, 45%, 36%);
+}
+
+.list-items-three{
+    list-style: none;
+    line-height: 30px;
+    color: hsl(30, 10%, 34%);
+    padding: 5px;
+}
+
+.list-items-three li{
+    counter-increment: step;
+}
+
+.list-items-three li::before{
+    content: counter(step) ".";
+    color: hsl(14, 45%, 36%);
+    margin-right: 18px;
+}
+
+/*----------------------------Nutrition Section----------------------*/
+
+.nutrition h2{
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition p{
+    margin-top: 20px;
+    color: hsl(30, 10%, 34%);
+}
+
+.hr{
+    height: 1px;
+    border: none;
+    background-color: hsl(30, 18%, 87%);
+    margin: 10px 0;
+}
+
+.nutrition-table{
+    margin-top: 20px;
+    
+}
+
+.nutrition-table div{
+    width: 45%;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+
+/*-----------------------------Break Points----------------------------------------------------------------------------*/
+
+@media screen and (max-width:1440px) {
+/*----------------------------Receipe Section----------------------*/
+.card-recipe{
+    padding: 30px;
+}
+
+.recipe-section h1{
+    margin-top: 18px;
+}
+
+.recipe-section p{
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+/*----------------------------Preparation Section----------------------*/
+.preparation-section{
+    padding: 25px;
+    margin-top: 35px;
+}
+
+.preparation-section p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.list-items-one{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.list-items-one li::before{
+    font-size: 30px;
+    margin-right: 25px;
+}
+
+/*----------------------------Ingredients Section----------------------*/
+.ingredients-section{
+    margin-top: 30px;
+}
+
+.list-items-two{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.list-items-two li::before{
+    font-size: 30px;
+    margin-right: 25px;
+}
+
+hr{
+    margin: 20px 0;
+}
+
+/*----------------------------Instructions Section----------------------*/
+.instructions-section{
+    margin-top: 10px;
+}
+
+.list-items-three{
+    line-height: 27px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+/*----------------------------Nutrition Section----------------------*/
+.nutrition p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.nutrition-table{
+    margin-top: 18px;
+}
+
+.nutrition-table div{
+    font-size: 15px;
+    padding: 5px;
+}
+}
+
+/*-----------------------------------------------------------------------*/
+@media screen and (max-width:1270px){
+.card-recipe{
+    padding: 30px;
+}
+
+/*----------------------------Receipe Section----------------------*/
+.recipe-section h1{
+    margin-top: 16px;
+}
+
+.recipe-section p{
+    margin-top: 16px;
+    font-size: 13px;
+}
+
+/*----------------------------Preparation Section----------------------*/
+.preparation-section{
+    padding: 23px;
+    margin-top: 35px;
+}
+
+.preparation-section p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.list-items-one{
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.list-items-one li::before{
+    font-size: 28px;
+    margin-right: 23px;
+}
+
+/*----------------------------Ingredients Section----------------------*/
+.ingredients-section{
+    margin-top: 25px;
+}
+
+.list-items-two{
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.list-items-two li::before{
+    font-size: 28px;
+    margin-right: 23px;
+}
+
+hr{
+    margin: 15px 0;
+}
+
+/*----------------------------Instructions Section----------------------*/
+.list-items-three{
+    line-height: 26px;
+    font-size: 13px;
+    padding: 4px;
+}
+
+/*----------------------------Nutrition Section----------------------*/
+.nutrition p{
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.nutrition-table{
+    margin-top: 17px;
+}
+
+.nutrition-table div{
+    font-size: 14px;
+    padding: 4px;
+}
+}
+
+@media (max-width:1090px) {
+    .card-recipe{
+        padding: 30px;
+    }
+}
+
+/*---------------------------------------------------------*/
+@media screen and (max-width:900px) {
+    .card-recipe{
+        padding: 25px;
+    }
+
+    .nutrition-table div{
+        font-size: 13px;
+        padding: 4px;
+        margin: 6px;
+    }
+}
+
+/*---------------------------------------------------------*/
+@media screen and (max-width:720px) {
+    .card-recipe{
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .card-recipe img{
+       border-radius: 0;
+    }
+
+    .all-content{
+        padding: 8px 25px;
+    }
+
+    .recipe-section h1{
+        margin-top: 16px;
+    }
+    
+    .recipe-section p{
+        margin-top: 8px;
+        font-size: 14px;
+    }
+
+/*----------------------------Preparation Section----------------------*/
+.preparation-section{
+    padding: 18px;
+    margin-top: 28px;
+}
+
+.preparation-section p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.list-items-one{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.list-items-one li::before{
+    font-size: 28px;
+    margin-right: 23px;
+}
+
+.list-items-two{
+    font-size: 14px;
+    line-height: 19px;
+}
+/*----------------------------Instructions Section----------------------*/
+.list-items-three{
+    font-size: 13px;
+    line-height: 25px;
+    padding: 7px;
+    margin: 7px;
+}
+
+/*----------------------------Nutrition Section----------------------*/
+.nutrition h2{
+    margin-top: 20px;
+}
+
+.nutrition p{
+    margin-top: 16px;
+    font-size: 15px;
+}
+
+.nutrition-table{
+    margin-top: 10px;
+    
+}
+
+.hr{
+    margin: 2px 0;
+}
+
+.nutrition-table div{
+    width: 40%;
+    padding: 8px;
+}
+    
+}
+
+/*---------------------------------------------------------*/
+@media screen and (max-width:380px) {
+    .recipe-section h1{
+        margin-top: 8px;
+        font-size: 17px;
+    }
+    
+    .recipe-section p{
+        margin-top: 13px;
+        font-size: 12px;
+    }
+
+    .all-content{
+        padding: 5px 8px;
+    }
+
+/*----------------------------Preparation Section----------------------*/
+.preparation-section{
+    padding: 12px;
+    margin-top: 17px;
+}
+
+.preparation-section p{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.list-items-one{
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.list-items-one li::before{
+    font-size: 24px;
+    margin-right: 9px;
+}
+
+.list-items-two{
+    font-size: 13px;
+    line-height: 15px;
+}
+
+/*----------------------------Ingredients Section----------------------*/
+.ingredients-section{
+    margin-top: 17px;
+}
+
+.list-items-two{
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.list-items-two li::before{
+    font-size: 24px;
+    margin-right: 9px;
+}
+
+hr{
+    margin: 5px 0;
+}
+
+/*----------------------------Instructions Section----------------------*/
+.list-items-three{
+    line-height: 22px;
+    padding: 4px;
+    margin: 2px;
+}
+
+/*----------------------------Nutrition Section----------------------*/
+.nutrition h2{
+    margin-top: 17px;
+}
+
+.nutrition p{
+    margin-top: 13px;
+    font-size: 13px;
+}
+
+.nutrition-table{
+    margin-top: 8px;
+}
+
+.hr{
+    margin: 1px 0;
+}
+
+.nutrition-table div{
+    width: 38%;
+    padding: 5px;
+}
+
+h2{
+    font-size: 15px;
+}
+}
