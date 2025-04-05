@@ -26,8 +26,8 @@ Recipe page
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My solution URL here](https://www.frontendmentor.io/solutions/recipe-page-responsive-design-wFm4Im8oM0)
+- Live Site URL: [My live site URL here](https://jayajo5.github.io/Recipe-page-challenge/)
 
 ## My process
 
