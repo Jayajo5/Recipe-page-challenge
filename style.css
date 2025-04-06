@@ -66,11 +66,15 @@ body{
     color: hsl(30, 10%, 34%);
 }
 
-.list-items-one li::before{
+.list-items-one li{
+    padding-left: 12px;
+}
+
+.list-items-one li::marker{
     content: ".";
-    font-size: 35px;
+    font-size: 25px;
     color: hsl(332, 51%, 32%);
-    margin-right: 30px;
+    
 }
 
 /*----------------------------Ingredients Section----------------------*/
@@ -89,12 +93,14 @@ body{
     padding: 10px;
     color: hsl(30, 10%, 34%);
 }
+.list-items-two li{
+    padding-left: 12px;
+}
 
-.list-items-two li::before{
+.list-items-two li::marker{
     content: ".";
-    font-size: 35px;
+    font-size: 25px;
     color: hsl(14, 45%, 36%);
-    margin-right: 30px;
 }
 
 hr{
@@ -115,20 +121,15 @@ hr{
 }
 
 .list-items-three{
-    list-style: none;
+    list-style: decimal;
     line-height: 30px;
     color: hsl(30, 10%, 34%);
     padding: 5px;
 }
 
 .list-items-three li{
-    counter-increment: step;
-}
-
-.list-items-three li::before{
-    content: counter(step) ".";
-    color: hsl(14, 45%, 36%);
-    margin-right: 18px;
+    margin-bottom: 12px;
+    padding-left: 16px;
 }
 
 /*----------------------------Nutrition Section----------------------*/
@@ -195,9 +196,8 @@ hr{
     line-height: 25px;
 }
 
-.list-items-one li::before{
-    font-size: 30px;
-    margin-right: 25px;
+.list-items-one li::marker{
+    font-size: 23px;
 }
 
 /*----------------------------Ingredients Section----------------------*/
@@ -210,9 +210,8 @@ hr{
     line-height: 20px;
 }
 
-.list-items-two li::before{
-    font-size: 30px;
-    margin-right: 25px;
+.list-items-two li::marker{
+    font-size: 22px;
 }
 
 hr{
@@ -278,9 +277,8 @@ hr{
     line-height: 25px;
 }
 
-.list-items-one li::before{
-    font-size: 28px;
-    margin-right: 23px;
+.list-items-one li::marker{
+    font-size: 22px;
 }
 
 /*----------------------------Ingredients Section----------------------*/
@@ -293,9 +291,8 @@ hr{
     line-height: 19px;
 }
 
-.list-items-two li::before{
-    font-size: 28px;
-    margin-right: 23px;
+.list-items-two li::marker{
+    font-size: 22px;
 }
 
 hr{
@@ -384,9 +381,8 @@ hr{
     line-height: 22px;
 }
 
-.list-items-one li::before{
-    font-size: 28px;
-    margin-right: 23px;
+.list-items-one li::marker{
+    font-size: 20px;
 }
 
 .list-items-two{
@@ -459,9 +455,8 @@ hr{
     line-height: 22px;
 }
 
-.list-items-one li::before{
-    font-size: 24px;
-    margin-right: 9px;
+.list-items-one li::marker{
+    font-size: 20px;
 }
 
 .list-items-two{
@@ -479,9 +474,8 @@ hr{
     line-height: 17px;
 }
 
-.list-items-two li::before{
-    font-size: 24px;
-    margin-right: 9px;
+.list-items-two li::marker{
+    font-size: 20px;
 }
 
 hr{
