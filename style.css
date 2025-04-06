@@ -121,7 +121,7 @@ hr{
 }
 
 .list-items-three{
-    list-style: decimal;
+    
     line-height: 30px;
     color: hsl(30, 10%, 34%);
     padding: 5px;
@@ -129,8 +129,15 @@ hr{
 
 .list-items-three li{
     margin-bottom: 12px;
-    padding-left: 16px;
+    padding-left: 10px;
+    counter-increment: step;
 }
+
+.list-items-three li::marker{
+    color: hsl(14, 45%, 36%);
+    font-size: 13px;
+}
+
 
 /*----------------------------Nutrition Section----------------------*/
 
